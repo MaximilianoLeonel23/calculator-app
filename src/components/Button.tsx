@@ -3,7 +3,7 @@ interface IProps {
   value?: string;
   theme: string;
   display: string;
-  setDisplay: (display: any) => void;
+  setDisplay: (display: string) => void;
   del?: boolean;
   reset?: boolean;
   result?: boolean;
@@ -29,7 +29,7 @@ const Button = ({
   };
 
   // Delete one character
-  const handleDelete = () => {
+  const handleDelete = (): void => {
     if (display.slice(-1) === " ") {
       setDisplay(display.substring(0, display.length - 3));
     } else if (display.slice(-2) === "0.") {
@@ -40,7 +40,7 @@ const Button = ({
   };
 
   // Calculate all operations
-  const calcResult = () => {
+  const calcResult = (): void => {
     if (display.length >= 5 && display.slice(-1) !== " ") {
       setDisplay(eval(display).toString());
     }

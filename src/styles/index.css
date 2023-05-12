@@ -42,6 +42,7 @@ body {
 
 .switcher-btn-theme1 {
   @apply bg-theme1-keys-toggle-red;
+
   &:hover {
     @apply brightness-125;
   }
