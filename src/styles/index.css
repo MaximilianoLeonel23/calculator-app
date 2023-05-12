@@ -7,7 +7,7 @@ body {
   font-weight: 700;
 }
 .background {
-  @apply h-screen;
+  @apply min-h-screen h-fit;
 }
 
 .btn {
