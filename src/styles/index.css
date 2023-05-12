@@ -1,0 +1,200 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+}
+.background {
+  @apply h-screen;
+}
+
+.btn {
+  @apply flex  items-center justify-center h-14 sm:h-12 w-full sm:w-20 rounded-lg  text-[2rem] text-center;
+}
+
+.btn-xl {
+  @apply flex  items-center justify-center h-14 sm:h-12 w-full rounded-lg text-[1.25rem] text-center;
+}
+
+.btn:hover {
+  @apply brightness-125;
+}
+
+.btn-xl:hover {
+  @apply brightness-125;
+}
+
+/* Theme 1 */
+.background-theme1 {
+  @apply bg-theme1-bg-main;
+}
+
+.text-theme1 {
+  @apply text-theme1-text-white;
+}
+
+.switcher-theme1 {
+  @apply bg-theme1-bg-toggle border-4 border-theme1-bg-toggle;
+  justify-content: flex-start;
+}
+
+.switcher-btn-theme1 {
+  @apply bg-theme1-keys-toggle-red;
+  &:hover {
+    @apply brightness-125;
+  }
+}
+
+.display-theme1 {
+  @apply bg-theme1-bg-screen;
+}
+
+.btn-container-theme1 {
+  @apply bg-theme1-bg-toggle;
+}
+
+.btn-theme1 {
+  @apply bg-theme1-keys-bg-orange text-theme1-text-blue;
+}
+
+.btn-shadow-theme1 {
+  @apply shadow-theme1-keys-shadow-orange;
+  box-shadow: 0 4px 0 0 hsl(28, 16%, 65%);
+}
+
+.btn-del-theme1 {
+  @apply bg-theme1-keys-bg-blue text-theme1-text-white;
+}
+
+.btn-del-shadow-theme1 {
+  @apply shadow-theme1-keys-shadow-blue;
+  box-shadow: 0 4px 0 0 hsl(224, 28%, 35%);
+}
+
+.btn-result-theme1 {
+  @apply bg-theme1-keys-toggle-red text-theme1-text-white;
+}
+
+.btn-result-shadow-theme1 {
+  @apply shadow-theme1-keys-shadow-red;
+  box-shadow: 0 4px 0 0 hsl(6, 70%, 34%);
+}
+
+/* Theme 2 */
+
+.background-theme2 {
+  @apply bg-theme2-bg-main;
+}
+
+.text-theme2 {
+  @apply text-theme2-text-yellow;
+}
+
+.switcher-theme2 {
+  @apply bg-theme2-bg-toggle border-4 border-theme2-bg-toggle;
+  justify-content: center;
+}
+
+.switcher-btn-theme2 {
+  @apply bg-theme2-keys-toggle-orange;
+  &:hover {
+    @apply brightness-125;
+  }
+}
+
+.display-theme2 {
+  @apply bg-theme2-bg-screen;
+}
+
+.btn-container-theme2 {
+  @apply bg-theme2-bg-toggle;
+}
+
+.btn-theme2 {
+  @apply bg-theme2-keys-bg-yellow text-theme2-text-yellow;
+}
+
+.btn-shadow-theme2 {
+  @apply shadow-theme2-keys-shadow-orange;
+  box-shadow: 0 4px 0 0 hsl(35, 11%, 61%);
+}
+
+.btn-del-theme2 {
+  @apply bg-theme2-keys-bg-cyan text-theme2-text-white;
+}
+
+.btn-del-shadow-theme2 {
+  @apply shadow-theme2-keys-shadow-cyan;
+  box-shadow: 0 4px 0 0 hsl(185, 58%, 25%);
+}
+
+.btn-result-theme2 {
+  @apply bg-theme2-keys-toggle-orange text-theme2-text-white;
+}
+
+.btn-result-shadow-theme2 {
+  @apply shadow-theme2-keys-toggle-shadow-orange;
+  box-shadow: 0 4px 0 0 hsl(25, 99%, 27%);
+}
+
+/* Theme 3 */
+.background-theme3 {
+  @apply bg-theme3-bg-main;
+}
+
+.text-theme3 {
+  @apply text-theme3-text-yellow;
+}
+
+.switcher-theme3 {
+  @apply bg-theme3-bg-toggle border-4 border-theme3-bg-toggle;
+  justify-content: flex-end;
+}
+
+.switcher-btn-theme3 {
+  @apply bg-theme3-keys-toggle-cyan;
+  &:hover {
+    @apply bg-theme3-keys-shadow-cyan;
+  }
+}
+
+.display-theme3 {
+  @apply bg-theme3-bg-screen text-theme3-text-yellow;
+}
+
+.btn-container-theme3 {
+  @apply bg-theme3-bg-toggle;
+}
+
+.btn-theme3 {
+  @apply bg-theme3-keys-bg-yellow text-theme3-text-yellow;
+
+  &:hover {
+    @apply bg-theme3-keys-bg-yellow;
+  }
+}
+
+.btn-shadow-theme3 {
+  @apply shadow-theme3-keys-shadow-orange;
+  box-shadow: 0 4px 0 0 hsl(290, 70%, 36%);
+}
+
+.btn-del-theme3 {
+  @apply bg-theme3-keys-bg-violet text-theme3-text-white;
+}
+
+.btn-del-shadow-theme3 {
+  @apply shadow-theme3-keys-shadow-violet;
+  box-shadow: 0 4px 0 0 hsl(285, 91%, 52%);
+}
+
+.btn-result-theme3 {
+  @apply bg-theme3-keys-toggle-cyan text-theme3-text-blue;
+}
+
+.btn-result-shadow-theme3 {
+  @apply shadow-theme3-keys-shadow-cyan;
+  box-shadow: 0 4px 0 0 hsl(177, 92%, 70%);
+}
